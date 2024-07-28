@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Donation Page</title>
+    <link href="../static/donation.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="margin:0">
+    <div class="page">
+        <a href="{{ url_for('logout') }}" class="link">Log Out</a>
+        <div class="rectangle">
+            {% if user %}
+                <strong class="head_text">{{user}}'s Donation Page</strong>
+            {% else %}
+                <strong class="head_text">Please make a donation!</strong>
+            {% endif %}
+        </div>
+        <div>
+            <form class="form_1" method="POST" action="{{ url_for('donate') }}">
+                <input type="number" name="amount" placeholder="Donation Amount" required>
+                <button class="donate">Add</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

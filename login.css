@@ -1,0 +1,116 @@
+body {
+    background: #003135;
+    font-family: 'helvetica neue';
+}
+
+.login-page {
+    background-color: #024950;
+    width: 500px;
+    margin: 70px auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+}
+
+.login-page h1 {
+    text-align: center;
+    padding: 40px 40px 0 40px;
+    font-weight: 300;
+    font-family: 'helvetica neue';
+}
+
+.login-page .content {
+    padding: 35px;
+    text-align: center;
+}
+.login-page .input-field {
+    padding: 15px 5px;
+}
+.login-page .input-field input {
+    border: none;
+    border-bottom: 1px solid  #0FA4AF;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    padding: 5px 0;
+    font-family: 'helvetica neue';
+    display: block;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.login-page a.link {
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 20px;
+}
+.login-page a.link:hover {
+    color: blue;
+    opacity: 0.8;
+}
+
+.login-page .action {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+}
+.login-page .form {
+    padding: 35px;
+    text-align: center;
+}
+.login-page .action button {
+    width: 50%;
+    height: 100;
+    border: none;
+    padding: 20px;
+    font-family: 'helvetica neue';
+    cursor: pointer;
+    text-transform: uppercase;
+    background:rgb(41, 9, 221);
+    color:rgb(0, 0, 0);
+    letter-spacing: 0.5px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+input {
+    border: none;
+    background-color: #90aead;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    padding: 5px 0;
+    font-family: 'helvetica neue';
+    display: block;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.error {
+    color: rgb(0,0,0);
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.log {
+    width: 500px;
+    height: 100;
+    padding: 20px;
+    font-family: 'helvetica neue';
+    cursor: pointer;
+    text-transform: uppercase;
+    background:#964734;
+    color: black;
+    letter-spacing: 0.5px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
